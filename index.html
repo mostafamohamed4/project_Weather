@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/letter-b.png" sizes="32x32">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <!-------------------Start navbar------------------>
+    <nav class="navbar navbar-b navbar-expand-lg  pt-2 pb-2 position-fixed ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/letter-b.png" alt="" class="logo" width="64" height="38">
+                <div class="logo">
+                    <span>Weather</span>
+                    <small class="site-description">tagline goes here</small>
+                </div>
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#about">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#services">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#work">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#blog">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-------------------End navbar------------------>
+    <!-------------------Start home------------------>
+    <section id="home" class="home">
+        <div class="overlay-itro ">
+            <div class="container">
+                <div class="search d-flex align-items-center  justify-content-center">
+                    <form action="" class="position-relative w-75">
+                        <input type="search" id="searchbar" placeholder="search"
+                            class="form-control w-100 text-center rounded-4">
+                        <button class="btn rounded-4" id="btn" type="button">search</button>
+                    </form>
+                </div>
+
+                <div class="row g-1 mt-5 pt-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card" id="card">
+
+                            <div class="card-header d-flex pt-3 justify-content-between">
+                                <p id="today"></p>
+                                <p id="Month"></p>
+                            </div>
+                            <div class="card-body" id="location">
+                                <div class="location">
+                                    <p id="city"></p>
+                                </div>
+                                <div class="degree d-flex align-items-end">
+                                    <div class="num">
+                                    </div>
+                                    <div class="forecast-icon" id="icon">
+                                    </div>
+                                </div>
+                                <div class="cardfooter">
+                                    <p class="text"></p>
+                                    <img src="images/icon-umberella.png" alt=""> <span id="wind_degree">%</span>
+                                    <img src="images/icon-compass.png" alt=""> <span id="wind_dir">%</span>
+                                    <img src="images/icon-wind.png" alt=""> <span id="wind_kph">%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class=" card-header d-flex pt-3 justify-content-between">
+                                <p class="nextday"></p>
+                                <p class="nextmonth"> </p>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="icon m-1">
+                                </div>
+                                <div class="num1 numm">
+                                </div>
+                                <div class="p-2">
+                                    <small class="small">
+
+                                    </small>
+                                    <p class="text p-4 textnext"></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class=" card-header d-flex pt-3 justify-content-between">
+                                <p class="nextday"></p>
+                                <p class="nextmonth"></p>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class=" icon  m-1">
+                                </div>
+                                <div class="num1 numm">
+
+                                </div>
+                                <div class="p-2">
+                                    <small class="small">
+
+
+                                    </small>
+                                    <p class="text p-4 textnext"></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-------------------End home------------------>
+    <section class="foteer  p-5 ">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <form action="" class="position-relative w-75">
+                    <input type="search" id="searchbar" placeholder="search"
+                        class="form-control w-100 text-center rounded-5">
+                    <button type="button" id="btn" class="btn rounded-5">search</button>
+                </form>
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="social-links ps-5">
+                        <a href="#"><i class="fa-brands fa-facebook ps-1"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter ps-1"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus ps-1"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest ps-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

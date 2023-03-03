@@ -1,0 +1,182 @@
+body {
+    background: #1e202b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    color: white;
+}
+
+/*Start nav */
+.navbar {
+    background: #1e202b ;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-description {
+    font-size: 0.7142857143em;
+    display: block;
+    color: #bfc1c8;
+}
+
+.navbar .nav-item a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin-left: 1rem;
+
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: #009ad8;
+}
+
+.navbar a:hover {
+    color: #009ad8;
+}
+
+/*end nav */
+/*start home */
+.home {
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 5555;
+}
+
+
+.home .overlay-itro {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.home .search{
+    padding-top: 70px;
+    margin-top: 70px;
+}
+.home .form-control {
+    background: #1e202b !important;
+    border: #1e202b !important;
+    padding: 20px 50px 20px 20px;
+    color: white;
+}
+
+.home .btn {
+    color: #009ad8;
+    background-color: transparent;
+    border: 2px solid #42485f;
+    padding: 15px 30px;
+    font-size: 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+.home .btn:hover {
+    background-color: #009ad8;
+    color: #fff;
+
+}
+
+
+.home .card {
+    background: #323544;
+    margin-bottom: 20px;
+}
+
+.home .card-header {
+    background: rgba(0, 0, 0, 0.1);
+    color: #bfc1c8;
+}
+
+.home .card-body {
+    color: #bfc1c8;
+}
+
+.home .num {
+    color: white;
+    font-size:6rem;
+    margin-right: 30px;
+    font-weight: 700;
+}
+
+
+
+.home .card span {
+    margin-right: 30px;
+}
+
+.home .card span img {
+    margin-right: 10px;
+}
+
+.home .num1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.home .text {
+    color: #009ad8;
+}
+
+/*  */
+
+.foteer {
+    background: #262936;
+}
+
+.foteer .form-control {
+    background: #1e202b !important;
+    border: #1e202b !important;
+    padding: 20px 50px 20px 20px;
+}
+
+.foteer .btn {
+    color: #009ad8;
+    background-color: transparent;
+    border: 2px solid #42485f;
+    padding: 15px 30px;
+    font-size: 15px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+
+.foteer .btn:hover {
+    background-color: #009ad8;
+    color: #fff;
+}
+
+.foteer p {
+    color: #bfc1c8;
+    font-size: 1rem;
+margin-top: 30px;
+}
