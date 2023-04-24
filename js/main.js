@@ -23,6 +23,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June", "Jul
 async function getdata(carentcity = "cairo") {
     respose = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=01c77be2ad934e01a48114330232002&q=${carentcity}&days=3`)
     resposedata = await respose.json()
+    console.log(resposedata);
     displayToday()
     displayNextToday()
 }
@@ -43,7 +44,7 @@ function displayToday() {
 
     da = monthNames[date.getDate()]
     today.innerHTML = dateToday;
-    Month.innerHTML = date.getDate() + " "+dateMonth;
+    Month.innerHTML = date.getDate() + " " + dateMonth;
     city.innerHTML = resposedata.location.name
     icon.innerHTML = `  <img src="https:${resposedata.current.condition.icon}" alt="" width="90">`
     text.innerHTML = resposedata.forecast.forecastday[0].day.condition.text
